@@ -47,15 +47,15 @@ nav {
         }
     }
 
-    @include breakpoint(tablet) {
-        display: none;
-    }
+    // @include breakpoint(tablet) {
+    //     display: none;
+    // }
 
-    @include breakpoint(phablet) {
-        display: none;
-    }
+    // @include breakpoint(phablet) {
+    //     display: none;
+    // }
 
-    @include breakpoint(mobileonly) {
-        display: none;
-    }
+    // @include breakpoint(mobileonly) {
+    //     display: none;
+    // }
 }

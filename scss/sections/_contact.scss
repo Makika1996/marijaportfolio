@@ -19,17 +19,17 @@
                     align-self: center;
                     font-size: 3vh;
 
-                    @include breakpoint(tablet) {
-                        font-size: 2vh;
-                    }
+                    // @include breakpoint(tablet) {
+                    //     font-size: 2vh;
+                    // }
 
-                    @include breakpoint(phablet) {
-                        font-size: 2vh;
-                    }
+                    // @include breakpoint(phablet) {
+                    //     font-size: 2vh;
+                    // }
 
-                    @include breakpoint(mobileonly) {
-                        font-size: 2vh;
-                    }
+                    // @include breakpoint(mobileonly) {
+                    //     font-size: 2vh;
+                    // }
                 }
 
                 p {
@@ -49,17 +49,17 @@
 
                     }
 
-                    @include breakpoint(tablet) {
-                        font-size: 2vh;
-                    }
+                    // @include breakpoint(tablet) {
+                    //     font-size: 2vh;
+                    // }
 
-                    @include breakpoint(phablet) {
-                        font-size: 2vh;
-                    }
+                    // @include breakpoint(phablet) {
+                    //     font-size: 2vh;
+                    // }
 
-                    @include breakpoint(mobileonly) {
-                        font-size: 2vh;
-                    }
+                    // @include breakpoint(mobileonly) {
+                    //     font-size: 2vh;
+                    // }
                 }
             }
         }
@@ -87,44 +87,44 @@
                             color: $blue;
                         }
 
-                        @include breakpoint(tablet) {
-                            font-size: 2vh;
-                        }
+                        // @include breakpoint(tablet) {
+                        //     font-size: 2vh;
+                        // }
 
-                        @include breakpoint(phablet) {
-                            font-size: 2vh;
-                        }
+                        // @include breakpoint(phablet) {
+                        //     font-size: 2vh;
+                        // }
 
-                        @include breakpoint(mobileonly) {
-                            font-size: 2vh;
-                        }
+                        // @include breakpoint(mobileonly) {
+                        //     font-size: 2vh;
+                        // }
                     }
                 }
 
             }
 
-            @include breakpoint(tablet) {
-                padding-top: 30px;
-            }
+            // @include breakpoint(tablet) {
+            //     padding-top: 30px;
+            // }
 
-            @include breakpoint(phablet) {
-                padding-top: 30px;
-            }
+            // @include breakpoint(phablet) {
+            //     padding-top: 30px;
+            // }
         }
 
-        @include breakpoint(tablet) {
-            display: inline-block;
-            width: 100%;
-        }
+        // @include breakpoint(tablet) {
+        //     display: inline-block;
+        //     width: 100%;
+        // }
 
-        @include breakpoint(phablet) {
-            display: inline-block;
-            width: 100%;
-        }
+        // @include breakpoint(phablet) {
+        //     display: inline-block;
+        //     width: 100%;
+        // }
 
-        @include breakpoint(mobileonly) {
-            display: inline-block;
-            width: 100%;
-        }
+        // @include breakpoint(mobileonly) {
+        //     display: inline-block;
+        //     width: 100%;
+        // }
     }
 }

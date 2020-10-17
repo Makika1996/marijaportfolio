@@ -5,57 +5,43 @@
             color: $pink;
             text-align: center;
 
-            @include breakpoint(tablet) {
-                font-size: 2vh;
-            }
+            // @include breakpoint(phablet) {
+            //     font-size: 2vh;
+            // }
 
-            @include breakpoint(phablet) {
-                font-size: 2vh;
-            }
-
-            @include breakpoint(mobileonly) {
-                font-size: 2vh;
-            }
+            // @include breakpoint(mobileonly) {
+            //     font-size: 2vh;
+            // }
         }
 
         .row {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
 
-            @include breakpoint(tablet) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-items: center;
-            }
+            // @include breakpoint(phablet) {
+            //     display: grid;
+            //     grid-template-columns: 1fr 1fr;
+            //     justify-items: center;
+            // }
 
-            @include breakpoint(phablet) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-items: center;
-            }
-
-            @include breakpoint(mobileonly) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-items: center;
-            }
+            // @include breakpoint(mobileonly) {
+            //     display: grid;
+            //     grid-template-columns: 1fr 1fr;
+            //     justify-items: center;
+            // }
         }
 
         .column {
             width: 90%;
             padding: 10px;
 
-            @include breakpoint(tablet) {
-                width: 80%;
-            }
+            // @include breakpoint(phablet) {
+            //     width: 60%;
+            // }
 
-            @include breakpoint(phablet) {
-                width: 60%;
-            }
-
-            @include breakpoint(mobileonly) {
-                width: 80%;
-            }
+            // @include breakpoint(mobileonly) {
+            //     width: 80%;
+            // }
         }
 
     }
