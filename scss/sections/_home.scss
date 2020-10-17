@@ -1,0 +1,60 @@
+.home {
+    background-color: $blue;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+        .left {
+            img {
+                height: 300px;
+            }
+        }
+
+        .right {
+            justify-self: start;
+
+            h2 {
+                font-size: 3.5vh;
+                font-weight: normal;
+            }
+
+            h1 {
+                font-size: 5vh;
+                font-family: 'Parisienne', cursive;
+                font-weight: lighter;
+                color: $white;
+                padding-left: 30px;
+            }
+
+            p {
+                font-size: 1.8vh;
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                
+                li {
+                    padding: 30px;
+
+                    i {
+                        font-size: 3vh;
+                        color: $white;
+                        transition-duration: 0.2s;
+
+                        &:hover {
+                            color: $grey;
+                        }
+
+                        &:active {
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: $white;
+    font-size: 1.8vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    padding: 0 10%;
+
+    .left {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        justify-items: start;
+
+        img {
+            padding: 5px 0;
+            height: 55px;
+        }
+    }
+
+    .right {
+        padding-right: 0px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: end;
+        align-self: center;
+        list-style-type: none;
+
+        a {
+            padding: 18px 20px;
+            text-decoration: none;
+            color: $black;
+            transition-duration: 0.2s;
+
+            &:hover {
+                border-bottom: 3px solid $pink;
+            }
+
+            &:active {
+                background-color: $blue;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.skills {
+    .container {
+    
+        .circle-name {
+            color: $pink;
+            text-align: center;
+        }
+    
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    
+        .column {
+            width: 90%;
+            padding: 10px;
+        }
+    }
+}

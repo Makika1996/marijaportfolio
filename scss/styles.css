@@ -1,0 +1,251 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #5f6366;
+}
+
+.container {
+  padding: 10% 5%;
+}
+
+.header {
+  font-size: 4vh;
+  font-weight: normal;
+  padding-bottom: 50px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-size: 1.8vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  padding: 0 10%;
+}
+
+nav .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[4];
+      grid-template-columns: repeat(4, 2fr);
+  justify-items: start;
+}
+
+nav .left img {
+  padding: 5px 0;
+  height: 55px;
+}
+
+nav .right {
+  padding-right: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  justify-items: end;
+  -ms-grid-row-align: center;
+      align-self: center;
+  list-style-type: none;
+}
+
+nav .right a {
+  padding: 18px 20px;
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+nav .right a:hover {
+  border-bottom: 3px solid #edb5bf;
+}
+
+nav .right a:active {
+  background-color: #99ced3;
+}
+
+.home {
+  background-color: #99ced3;
+}
+
+.home .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .container .left img {
+  height: 300px;
+}
+
+.home .container .right {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.home .container .right h2 {
+  font-size: 3.5vh;
+  font-weight: normal;
+}
+
+.home .container .right h1 {
+  font-size: 5vh;
+  font-family: 'Parisienne', cursive;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-left: 30px;
+}
+
+.home .container .right p {
+  font-size: 1.8vh;
+}
+
+.home .container .right ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .container .right ul li {
+  padding: 30px;
+}
+
+.home .container .right ul li i {
+  font-size: 3vh;
+  color: #ffffff;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.home .container .right ul li i:hover {
+  color: #5f6366;
+}
+
+.home .container .right ul li i:active {
+  color: #edb5bf;
+}
+
+.about .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .container .left h1 span {
+  color: #edb5bf;
+}
+
+.about .container .left .blue {
+  color: #edb5bf;
+  font-size: 2.5vh;
+  padding-bottom: 10px;
+}
+
+.about .container .left .blue span {
+  font-style: italic;
+}
+
+.about .container .left p {
+  font-size: 1.8vh;
+  text-align: justify;
+}
+
+.about .container .right img {
+  height: 300px;
+}
+
+.service {
+  background-color: #99ced3;
+}
+
+.service .container h1 span {
+  color: #ffffff;
+}
+
+.service .container .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service .container .bottom .item-service i {
+  color: #ffffff;
+  font-size: 5vh;
+}
+
+.service .container .bottom .item-service h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.service .container .bottom .item-service p {
+  font-size: 1.8vh;
+  padding: 15px;
+  text-align: justify;
+}
+
+.skills .container .circle-name {
+  color: #edb5bf;
+  text-align: center;
+}
+
+.skills .container .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.skills .container .column {
+  width: 90%;
+  padding: 10px;
+}
+
+.contact {
+  background-color: #5f6366;
+}
+
+.contact .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  color: #edb5bf;
+}
+/*# sourceMappingURL=styles.css.map */

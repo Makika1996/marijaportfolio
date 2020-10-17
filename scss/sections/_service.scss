@@ -1,0 +1,35 @@
+.service {
+    background-color: $blue;
+
+    .container {
+        h1 {
+            
+            span {
+                color: $white;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .item-service {
+                i {
+                    color: $white;
+                    font-size: 5vh;
+                }
+                h3 {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    padding: 15px;
+                }
+                p{
+                    font-size: 1.8vh;
+                    padding: 15px;
+                    text-align: justify;
+                }
+            }
+
+        }
+    }
+}
