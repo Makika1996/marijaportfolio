@@ -5,13 +5,26 @@
         justify-items: center;
         align-items: center;
 
-        
+
         .left {
+            justify-self: center;
+
+            img {
+                height: 300px;
+            }
+            @include breakpoint(mobileonly) {
+                display: none;
+        
+            }
+        }
+
+        .right {
             h1 {
                 span {
                     color: $pink;
                 }
             }
+
             .blue {
                 color: $pink;
                 font-size: 2.5vh;
@@ -21,17 +34,18 @@
                     font-style: italic;
                 }
             }
-            p{
+
+            p {
                 font-size: 1.8vh;
                 text-align: justify;
             }
-            
+
         }
 
-        .right {
-            img {
-                height: 300px;
-            }
+        @include breakpoint(mobileonly) {
+            display: inline-block;
+
         }
     }
+
 }

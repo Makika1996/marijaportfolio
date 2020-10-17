@@ -3,7 +3,7 @@
 
     .container {
         h1 {
-            
+
             span {
                 color: $white;
             }
@@ -18,18 +18,24 @@
                     color: $white;
                     font-size: 5vh;
                 }
+
                 h3 {
                     margin-top: 10px;
                     margin-bottom: 20px;
                     padding: 15px;
                 }
-                p{
+
+                p {
                     font-size: 1.8vh;
                     padding: 15px;
                     text-align: justify;
                 }
             }
 
+            @include breakpoint(mobileonly) {
+                display: inline-block;
+
+            }
         }
     }
 }

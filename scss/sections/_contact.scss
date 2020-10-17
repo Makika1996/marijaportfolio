@@ -67,4 +67,8 @@
             }
         }
     }
+    @include breakpoint(mobileonly) {
+        display: inline-block;
+
+    }
 }

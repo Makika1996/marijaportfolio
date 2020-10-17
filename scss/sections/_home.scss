@@ -7,14 +7,9 @@
         justify-items: center;
         align-items: center;
 
-        .left {
-            img {
-                height: 300px;
-            }
-        }
 
-        .right {
-            justify-self: start;
+        .left {
+            justify-self: end;
 
             h2 {
                 font-size: 3.5vh;
@@ -36,7 +31,7 @@
             ul {
                 list-style-type: none;
                 display: flex;
-                
+
                 li {
                     padding: 30px;
 
@@ -55,6 +50,32 @@
                     }
                 }
             }
+
+            @include breakpoint(mobileonly) {
+                text-align: center;
+            }
+        }
+
+        .right {
+            justify-self: center;
+
+            img {
+                height: 300px;
+
+                @include breakpoint(mobileonly) {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+            }
+
+        }
+
+        @include breakpoint(mobileonly) {
+            display: inline-block;
+            width: 100%;
+
         }
     }
 }

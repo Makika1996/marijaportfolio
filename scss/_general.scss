@@ -15,6 +15,10 @@ body {
 
 .container {
     padding: 10% 5%;
+
+    @include breakpoint(mobileonly){
+        padding: 2%;
+    }
 }
 
 .header {
