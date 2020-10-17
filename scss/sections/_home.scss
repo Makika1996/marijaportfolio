@@ -14,6 +14,18 @@
             h2 {
                 font-size: 3.5vh;
                 font-weight: normal;
+
+                @include breakpoint(tablet) {
+                    font-size: 2vh;
+                }
+
+                @include breakpoint(phablet) {
+                    font-size: 2vh;
+                }
+
+                @include breakpoint(mobileonly) {
+                    font-size: 2vh;
+                }
             }
 
             h1 {
@@ -22,16 +34,47 @@
                 font-weight: lighter;
                 color: $white;
                 padding-left: 30px;
+
+                @include breakpoint(tablet) {
+                    font-size: 3.5vh;
+                    padding-left: 0;
+                }
+
+                @include breakpoint(phablet) {
+                    font-size: 3.5vh;
+                    padding-left: 0;
+                }
+
+                @include breakpoint(mobileonly) {
+                    font-size: 3.5vh;
+                    padding-left: 0;
+                }
             }
 
             p {
                 font-size: 1.8vh;
+
+                @include breakpoint(tablet) {
+                    font-size: 1.2vh;
+                }
+
+                @include breakpoint(phablet) {
+                    font-size: 1.2vh;
+                }
+
+                @include breakpoint(mobileonly) {
+                    font-size: 1.2vh;
+                }
             }
 
             ul {
                 list-style-type: none;
                 display: flex;
 
+                @include breakpoint(phablet) {
+                    justify-content:center;
+                }
+                
                 li {
                     padding: 30px;
 
@@ -47,8 +90,28 @@
                         &:active {
                             color: $pink;
                         }
+
+                        @include breakpoint(tablet) {
+                            font-size: 2vh;
+                        }
+
+                        @include breakpoint(phablet) {
+                            font-size: 2vh;
+                        }
+
+                        @include breakpoint(mobileonly) {
+                            font-size: 2vh;
+                        }
                     }
                 }
+            }
+
+            @include breakpoint(tablet) {
+                text-align: center;
+            }
+            
+            @include breakpoint(phablet) {
+                text-align: center;
             }
 
             @include breakpoint(mobileonly) {
@@ -62,6 +125,20 @@
             img {
                 height: 300px;
 
+                @include breakpoint(tablet) {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+
+                @include breakpoint(phablet) {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+
                 @include breakpoint(mobileonly) {
                     display: block;
                     margin-left: auto;
@@ -72,10 +149,19 @@
 
         }
 
+        @include breakpoint(tablet) {
+            display: inline-block;
+            width: 100%;
+        }
+
+        @include breakpoint(phablet) {
+            display: inline-block;
+            width: 100%;
+        }
+
         @include breakpoint(mobileonly) {
             display: inline-block;
             width: 100%;
-
         }
     }
 }

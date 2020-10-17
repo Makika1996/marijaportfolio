@@ -6,24 +6,46 @@
         align-items: center;
 
 
+        h1 {
+            span {
+                color: $pink;
+            }
+
+            @include breakpoint(tablet) {
+                padding-bottom: 0;
+            }
+
+            @include breakpoint(phablet) {
+                padding-bottom: 0;
+            }
+
+            @include breakpoint(mobileonly) {
+                padding-bottom: 0;
+            }
+        }
+
         .left {
             justify-self: center;
 
             img {
                 height: 300px;
+
+                @include breakpoint(tablet) {
+                    display: none;
+                }
+
+                @include breakpoint(phablet) {
+                    display: none;
+                }
+
+                @include breakpoint(mobileonly) {
+                    display: none;
+                }
             }
-            @include breakpoint(mobileonly) {
-                display: none;
-        
-            }
+
         }
 
         .right {
-            h1 {
-                span {
-                    color: $pink;
-                }
-            }
 
             .blue {
                 color: $pink;
@@ -33,18 +55,49 @@
                 span {
                     font-style: italic;
                 }
+
+                @include breakpoint(tablet) {
+                    font-size: 2vh;
+                }
+
+                @include breakpoint(phablet) {
+                    font-size: 2vh;
+                }
+
+                @include breakpoint(mobileonly) {
+                    font-size: 2vh;
+                }
             }
 
             p {
                 font-size: 1.8vh;
                 text-align: justify;
+
+                @include breakpoint(tablet) {
+                    font-size: 1.5vh;
+                }
+
+                @include breakpoint(phablet) {
+                    font-size: 1.5vh;
+                }
+
+                @include breakpoint(mobileonly) {
+                    font-size: 1.5vh;
+                }
             }
 
         }
 
+        @include breakpoint(tablet) {
+            display: inline-block;
+        }
+    
+        @include breakpoint(phablet) {
+            display: inline-block;
+        }
+    
         @include breakpoint(mobileonly) {
             display: inline-block;
-
         }
     }
 
