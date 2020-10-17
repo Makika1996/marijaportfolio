@@ -248,4 +248,83 @@ nav .right a:active {
       grid-template-columns: 1fr 1fr;
   color: #edb5bf;
 }
+
+.contact .container .left {
+  margin: auto 0;
+}
+
+.contact .container .left .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+  padding: 20px 0;
+}
+
+.contact .container .left .item i {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3vh;
+}
+
+.contact .container .left .item p {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contact .container .left .item p a {
+  color: #edb5bf;
+}
+
+.contact .container .left .item p a:hover {
+  color: #ffffff;
+}
+
+.contact .container .left .item p a:active {
+  color: #99ced3;
+}
+
+.contact .container .right {
+  margin: auto 0;
+}
+
+.contact .container .right ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  list-style-type: none;
+}
+
+.contact .container .right ul li a {
+  color: #edb5bf;
+  font-size: 3vh;
+}
+
+.contact .container .right ul li a:hover {
+  color: #ffffff;
+}
+
+.contact .container .right ul li a:active {
+  color: #99ced3;
+}
+
+footer {
+  background-color: #edb5bf;
+  padding: 1% 5%;
+  text-align: end;
+  font-size: 2vh;
+}
+
+footer span {
+  font-family: 'Parisienne', cursive;
+  font-size: 3vh;
+}
 /*# sourceMappingURL=styles.css.map */

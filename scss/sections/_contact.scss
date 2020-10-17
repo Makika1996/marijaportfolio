@@ -5,5 +5,66 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         color: $pink;
+
+        .left {
+            margin: auto 0;
+
+            .item {
+                display: grid;
+                grid-template-columns: 1fr 5fr;
+                padding: 20px 0;
+
+                i {
+                    justify-self: center;
+                    align-self: center;
+                    font-size: 3vh;
+                }
+
+                p {
+                    justify-self: start;
+                    align-self: center;
+
+                    a {
+                        color: $pink;
+
+                        &:hover {
+                            color: $white;
+                        }
+
+                        &:active {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            margin: auto 0;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                justify-items: center;
+                list-style-type: none;
+
+                li {
+
+                    a {
+                        color: $pink;
+                        font-size: 3vh;
+
+                        &:hover {
+                            color: $white;
+                        }
+
+                        &:active {
+                            color: $blue;
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }
