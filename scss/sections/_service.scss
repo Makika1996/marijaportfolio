@@ -20,13 +20,13 @@
                     color: $white;
                     font-size: 5vh;
                     
-                    // @include breakpoint(phablet) {
-                    //     font-size: 3.5vh;
-                    // }
+                    @include breakpoint(tablet) {
+                        font-size: 3.5vh;
+                    }
 
-                    // @include breakpoint(mobileonly) {
-                    //     font-size: 3.5vh;
-                    // }
+                    @include breakpoint(mobileonly) {
+                        font-size: 3.5vh;
+                    }
                 }
 
                 h3 {
@@ -34,15 +34,15 @@
                     margin-bottom: 20px;
                     padding: 15px;
 
-                    // @include breakpoint(phablet) {
-                    //     margin: 0;
-                    //     font-size: 2vh;
-                    // }
+                    @include breakpoint(tablet) {
+                        margin: 0;
+                        font-size: 2vh;
+                    }
 
-                    // @include breakpoint(mobileonly) {
-                    //     margin: 0;
-                    //     font-size: 2vh;
-                    // }
+                    @include breakpoint(mobileonly) {
+                        margin: 0;
+                        font-size: 2vh;
+                    }
                 }
 
                 p {
@@ -50,24 +50,24 @@
                     padding: 15px;
                     text-align: justify;
 
-                    // @include breakpoint(phablet) {
-                    //     font-size: 1.5vh;
-                    // }
+                    @include breakpoint(tablet) {
+                        font-size: 1.5vh;
+                    }
 
-                    // @include breakpoint(mobileonly) {
-                    //     font-size: 1.5vh;
-                    // }
+                    @include breakpoint(mobileonly) {
+                        font-size: 1.5vh;
+                    }
                 }
             }
 
-            // @include breakpoint(phablet) {
-            //     display: grid;
-            //     grid-template-columns: 1fr 1fr;
-            // }
+            @include breakpoint(tablet) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
 
-            // @include breakpoint(mobileonly) {
-            //     display: inline-block;
-            // }
+            @include breakpoint(mobileonly) {
+                display: inline-block;
+            }
         }
     }
 }

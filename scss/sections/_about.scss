@@ -5,47 +5,23 @@
         justify-items: center;
         align-items: center;
 
-
         h1 {
+            justify-self: start;
+
             span {
                 color: $pink;
             }
 
-            // @include breakpoint(tablet) {
-            //     padding-bottom: 0;
-            // }
+            @include breakpoint(tablet) {
+                padding-bottom: 0;
+            }
 
-            // @include breakpoint(phablet) {
-            //     padding-bottom: 0;
-            // }
-
-            // @include breakpoint(mobileonly) {
-            //     padding-bottom: 0;
-            // }
+            @include breakpoint(mobileonly) {
+                padding-bottom: 0;
+            }
         }
 
         .left {
-            justify-self: center;
-
-            img {
-                height: 300px;
-
-                // @include breakpoint(tablet) {
-                //     display: none;
-                // }
-
-                // @include breakpoint(phablet) {
-                //     display: none;
-                // }
-
-                // @include breakpoint(mobileonly) {
-                //     display: none;
-                // }
-            }
-
-        }
-
-        .right {
 
             .blue {
                 color: $pink;
@@ -56,49 +32,54 @@
                     font-style: italic;
                 }
 
-                // @include breakpoint(tablet) {
-                //     font-size: 2vh;
-                // }
+                @include breakpoint(tablet) {
+                    font-size: 2vh;
+                }
 
-                // @include breakpoint(phablet) {
-                //     font-size: 2vh;
-                // }
-
-                // @include breakpoint(mobileonly) {
-                //     font-size: 2vh;
-                // }
+                @include breakpoint(mobileonly) {
+                    font-size: 2vh;
+                }
             }
 
             p {
                 font-size: 1.8vh;
                 text-align: justify;
 
-                // @include breakpoint(tablet) {
-                //     font-size: 1.5vh;
-                // }
+                @include breakpoint(tablet) {
+                    font-size: 1.5vh;
+                }
 
-                // @include breakpoint(phablet) {
-                //     font-size: 1.5vh;
-                // }
-
-                // @include breakpoint(mobileonly) {
-                //     font-size: 1.5vh;
-                // }
+                @include breakpoint(mobileonly) {
+                    font-size: 1.5vh;
+                }
             }
 
         }
 
-        // @include breakpoint(tablet) {
-        //     display: inline-block;
-        // }
-    
-        // @include breakpoint(phablet) {
-        //     display: inline-block;
-        // }
-    
-        // @include breakpoint(mobileonly) {
-        //     display: inline-block;
-        // }
+        .right {
+            justify-self: center;
+
+            img {
+                height: 300px;
+
+                @include breakpoint(tablet) {
+                    display: none;
+                }
+
+                @include breakpoint(mobileonly) {
+                    display: none;
+                }
+            }
+
+        }
+
+        @include breakpoint(tablet) {
+            display: inline-block;
+        }
+
+        @include breakpoint(mobileonly) {
+            display: inline-block;
+        }
     }
 
 }

@@ -8,28 +8,20 @@ footer {
         font-family: 'Parisienne', cursive;
         font-size: 3vh;
 
-        // @include breakpoint(tablet) {
-        //     font-size: 1.8vh;
-        // }
+        @include breakpoint(tablet) {
+            font-size: 1.8vh;
+        }
 
-        // @include breakpoint(phablet) {
-        //     font-size: 1.8vh;
-        // }
-
-        // @include breakpoint(mobileonly) {
-        //     font-size: 1.5vh;
-        // }
+        @include breakpoint(mobileonly) {
+            font-size: 1.5vh;
+        }
     }
 
-    // @include breakpoint(tablet) {
-    //     font-size: 1.5vh;
-    // }
+    @include breakpoint(tablet) {
+        font-size: 1.5vh;
+    }
 
-    // @include breakpoint(phablet) {
-    //     font-size: 1.5vh;
-    // }
-
-    // @include breakpoint(mobileonly) {
-    //     font-size: 1.2vh;
-    // }
+    @include breakpoint(mobileonly) {
+        font-size: 1.2vh;
+    }
 }
