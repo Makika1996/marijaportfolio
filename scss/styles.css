@@ -19,19 +19,12 @@ body {
 }
 
 .header {
-  font-size: 4vh;
+  font-size: 5vh;
   font-weight: normal;
   padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    font-size: 3vh;
-    text-align: start;
-  }
-}
-
-@media screen and (min-width: 600px) {
   .header {
     font-size: 3vh;
     text-align: start;
@@ -726,9 +719,5 @@ footer span {
   footer {
     font-size: 1.2vh;
   }
-}
-
-.blog {
-  background-color: red;
 }
 /*# sourceMappingURL=styles.css.map */

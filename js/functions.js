@@ -1,10 +1,10 @@
 $(document).ready(function () {
   console.log('circle');
 
-  circle($("#test-circle"), 80);
-  circle($("#test-circle2"), 95);
-  circle($("#test-circle3"), 60);
-  circle($("#test-circle4"), 65);
+  circle($("#test-circle"), 95);
+  circle($("#test-circle2"), 70);
+  circle($("#test-circle3"), 65);
+  circle($("#test-circle4"), 40);
 
   floatLabels();
 })

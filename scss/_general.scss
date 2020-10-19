@@ -18,16 +18,11 @@ body {
 }
 
 .header {
-    font-size: 4vh;
+    font-size: 5vh;
     font-weight: normal;
     padding-bottom: 50px;
 
     @include breakpoint(tablet) {
-        font-size: 3vh;
-        text-align: start;
-    }
-
-    @include breakpoint(phablet) {
         font-size: 3vh;
         text-align: start;
     }
