@@ -3,61 +3,74 @@
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: "i1 sm""i2 sm""i3 sm";
         color: $pink;
 
-        .left {
-            margin: auto 0;
+        .item-1 {
+            grid-area: i1;
+        }
 
-            .item {
-                display: grid;
-                grid-template-columns: 1fr 5fr;
-                padding: 20px 0;
+        .item-2 {
+            grid-area: i2;
+        }
 
-                i {
-                    justify-self: center;
-                    align-self: center;
-                    font-size: 3vh;
+        .item-3 {
+            grid-area: i3;
+        }
 
-                    @include breakpoint(tablet) {
-                        font-size: 2vh;
-                    }
+        .item-1,
+        .item-2,
+        .item-3 {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            padding: 20px 0;
 
-                    @include breakpoint(mobileonly) {
-                        font-size: 2vh;
-                    }
+            i {
+                justify-self: center;
+                align-self: center;
+                font-size: 3vh;
+
+                @include breakpoint(tablet) {
+                    font-size: 2vh;
                 }
 
-                p {
-                    justify-self: start;
-                    align-self: center;
+                @include breakpoint(mobileonly) {
+                    font-size: 2vh;
+                }
+            }
 
-                    a {
-                        color: $pink;
+            p {
+                justify-self: start;
+                align-self: center;
 
-                        &:hover {
-                            color: $white;
-                        }
+                a {
+                    color: $pink;
 
-                        &:active {
-                            color: $blue;
-                        }
-
+                    &:hover {
+                        color: $white;
                     }
 
-                    @include breakpoint(tablet) {
-                        font-size: 2vh;
+                    &:active {
+                        color: $blue;
                     }
 
-                    @include breakpoint(mobileonly) {
-                        font-size: 2vh;
-                    }
+                }
+
+                @include breakpoint(tablet) {
+                    font-size: 2vh;
+                }
+
+                @include breakpoint(mobileonly) {
+                    font-size: 2vh;
                 }
             }
         }
 
         .right {
             margin: auto 0;
+            grid-area: sm;
 
             ul {
                 display: grid;

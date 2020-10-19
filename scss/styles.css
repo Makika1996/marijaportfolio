@@ -555,16 +555,34 @@ nav .right a:active {
 .contact .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: "i1 sm" "i2 sm" "i3 sm";
   color: #edb5bf;
 }
 
-.contact .container .left {
-  margin: auto 0;
+.contact .container .item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: i1;
 }
 
-.contact .container .left .item {
+.contact .container .item-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: i2;
+}
+
+.contact .container .item-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: i3;
+}
+
+.contact .container .item-1,
+.contact .container .item-2,
+.contact .container .item-3 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 5fr;
@@ -572,7 +590,9 @@ nav .right a:active {
   padding: 20px 0;
 }
 
-.contact .container .left .item i {
+.contact .container .item-1 i,
+.contact .container .item-2 i,
+.contact .container .item-3 i {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -582,18 +602,24 @@ nav .right a:active {
 }
 
 @media screen and (max-width: 768px) {
-  .contact .container .left .item i {
+  .contact .container .item-1 i,
+  .contact .container .item-2 i,
+  .contact .container .item-3 i {
     font-size: 2vh;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .contact .container .left .item i {
+  .contact .container .item-1 i,
+  .contact .container .item-2 i,
+  .contact .container .item-3 i {
     font-size: 2vh;
   }
 }
 
-.contact .container .left .item p {
+.contact .container .item-1 p,
+.contact .container .item-2 p,
+.contact .container .item-3 p {
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: center;
@@ -601,32 +627,46 @@ nav .right a:active {
       align-self: center;
 }
 
-.contact .container .left .item p a {
+.contact .container .item-1 p a,
+.contact .container .item-2 p a,
+.contact .container .item-3 p a {
   color: #edb5bf;
 }
 
-.contact .container .left .item p a:hover {
+.contact .container .item-1 p a:hover,
+.contact .container .item-2 p a:hover,
+.contact .container .item-3 p a:hover {
   color: #ffffff;
 }
 
-.contact .container .left .item p a:active {
+.contact .container .item-1 p a:active,
+.contact .container .item-2 p a:active,
+.contact .container .item-3 p a:active {
   color: #99ced3;
 }
 
 @media screen and (max-width: 768px) {
-  .contact .container .left .item p {
+  .contact .container .item-1 p,
+  .contact .container .item-2 p,
+  .contact .container .item-3 p {
     font-size: 2vh;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .contact .container .left .item p {
+  .contact .container .item-1 p,
+  .contact .container .item-2 p,
+  .contact .container .item-3 p {
     font-size: 2vh;
   }
 }
 
 .contact .container .right {
   margin: auto 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: sm;
 }
 
 .contact .container .right ul {
