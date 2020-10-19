@@ -146,19 +146,32 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .navbar .logo {
+    display: inline-block;
+  }
+  .navbar .logo img {
+    height: 35px;
+  }
   .navbar .main-nav {
     list-style-type: none;
     display: none;
+    width: 100%;
   }
   .navbar .main-nav li {
     text-align: center;
     margin: 15px auto;
   }
-  .navbar .logo {
-    display: inline-block;
+  .navbar .main-nav li a {
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
   }
-  .navbar .logo img {
-    height: 30px;
+  .navbar .main-nav li a:hover {
+    color: #edb5bf;
+  }
+  .navbar .main-nav li a:active {
+    color: #99ced3;
   }
   .navbar .navbar-toggle {
     display: block;
