@@ -406,12 +406,10 @@ nav .right a:active {
 }
 
 .service .container .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 .service .container .bottom .item-service {
@@ -436,9 +434,8 @@ nav .right a:active {
 }
 
 .service .container .bottom .item-service h3 {
-  margin-top: 10px;
-  margin-bottom: 20px;
   padding: 15px;
+  font-size: 2.5vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -491,7 +488,7 @@ nav .right a:active {
 .skills .container .circle-name {
   color: #edb5bf;
   text-align: center;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -511,6 +508,7 @@ nav .right a:active {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 @media screen and (max-width: 768px) {

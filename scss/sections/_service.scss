@@ -10,8 +10,8 @@
         }
 
         .bottom {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
 
             .item-service {
                 text-align: center;
@@ -30,9 +30,8 @@
                 }
 
                 h3 {
-                    margin-top: 10px;
-                    margin-bottom: 20px;
                     padding: 15px;
+                    font-size: 2.5vh;
 
                     @include breakpoint(tablet) {
                         margin: 0;
