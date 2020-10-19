@@ -1,4 +1,4 @@
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,8 +10,13 @@ nav {
     right: 0;
     z-index: 2000;
     padding: 0 10%;
+    border-bottom: 1px solid $blue;
 
-    .left {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo {
         display: grid;
         grid-template-columns: repeat(4, 2fr);
         justify-items: start;
@@ -22,7 +27,7 @@ nav {
         }
     }
 
-    .right {
+    .main-nav {
         padding-right: 0px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -43,15 +48,103 @@ nav {
             &:active {
                 background-color: $blue;
             }
-
         }
     }
 
     @include breakpoint(tablet) {
-        display: none;
+        .logo {
+            display: inline-block;
+
+            img {
+                height: 35px;
+            }
+
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+
+            li {
+                text-align: center;
+                margin: 15px auto;
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                    transition-duration: 0.2s;
+
+                    &:hover {
+                        color: $pink;
+                    }
+
+                    &:active {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggle {
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10%;
+            cursor: pointer;
+            color: $pink;
+            font-size: 3vh;
+        }
+
+        .active {
+            display: block;
+        }
     }
 
     @include breakpoint(mobileonly) {
-        display: none;
+        .logo {
+            display: inline-block;
+
+            img {
+                height: 35px;
+            }
+
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+
+            li {
+                text-align: center;
+                margin: 15px auto;
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                    transition-duration: 0.2s;
+
+                    &:hover {
+                        color: $pink;
+                    }
+
+                    &:active {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggle {
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10%;
+            cursor: pointer;
+            color: $pink;
+            font-size: 3vh;
+        }
+
+        .active {
+            display: block;
+        }
     }
-}

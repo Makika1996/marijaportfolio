@@ -38,7 +38,7 @@ body {
   }
 }
 
-nav {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,9 +56,14 @@ nav {
   right: 0;
   z-index: 2000;
   padding: 0 10%;
+  border-bottom: 1px solid #99ced3;
 }
 
-nav .left {
+.navbar .navbar-toggle {
+  display: none;
+}
+
+.navbar .logo {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (2fr)[4];
@@ -66,12 +71,12 @@ nav .left {
   justify-items: start;
 }
 
-nav .left img {
+.navbar .logo img {
   padding: 5px 0;
   height: 55px;
 }
 
-nav .right {
+.navbar .main-nav {
   padding-right: 0px;
   display: -ms-grid;
   display: grid;
@@ -83,7 +88,7 @@ nav .right {
   list-style-type: none;
 }
 
-nav .right a {
+.navbar .main-nav a {
   padding: 18px 20px;
   text-decoration: none;
   color: #000000;
@@ -91,23 +96,81 @@ nav .right a {
           transition-duration: 0.2s;
 }
 
-nav .right a:hover {
+.navbar .main-nav a:hover {
   border-bottom: 3px solid #edb5bf;
 }
 
-nav .right a:active {
+.navbar .main-nav a:active {
   background-color: #99ced3;
 }
 
 @media screen and (max-width: 768px) {
-  nav {
+  .navbar .logo {
+    display: inline-block;
+  }
+  .navbar .logo img {
+    height: 35px;
+  }
+  .navbar .main-nav {
+    list-style-type: none;
     display: none;
+  }
+  .navbar .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .navbar .main-nav li a {
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+  }
+  .navbar .main-nav li a:hover {
+    color: #edb5bf;
+  }
+  .navbar .main-nav li a:active {
+    color: #99ced3;
+  }
+  .navbar .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10%;
+    cursor: pointer;
+    color: #edb5bf;
+    font-size: 3vh;
+  }
+  .navbar .active {
+    display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  nav {
+  .navbar .main-nav {
+    list-style-type: none;
     display: none;
+  }
+  .navbar .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .navbar .logo {
+    display: inline-block;
+  }
+  .navbar .logo img {
+    height: 30px;
+  }
+  .navbar .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10%;
+    cursor: pointer;
+    color: #edb5bf;
+    font-size: 3vh;
+  }
+  .navbar .active {
+    display: block;
   }
 }
 
