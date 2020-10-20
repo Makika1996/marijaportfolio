@@ -3,34 +3,33 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background-color: $white;
+    background-color: $color-white;
     font-size: 1.8vh;
     position: fixed;
     left: 0;
     right: 0;
     z-index: 2000;
     padding: 0 10%;
-    border-bottom: 1px solid $blue;
+    border-bottom: 1px solid $color-blue;
 
     .navbar-toggle {
         display: none;
     }
 
     .logo {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
+        display: block;
         justify-items: start;
 
         img {
             padding: 5px 0;
-            height: 55px;
+            height: 50px;
         }
     }
 
     .main-nav {
         padding-right: 0px;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         justify-items: end;
         align-self: center;
         list-style-type: none;
@@ -38,27 +37,29 @@
         a {
             padding: 18px 20px;
             text-decoration: none;
-            color: $black;
+            color: $color-black;
             transition-duration: 0.2s;
 
             &:hover {
-                border-bottom: 3px solid $pink;
+                border-bottom: 3px solid $color-pink;
             }
 
             &:active {
-                background-color: $blue;
+                background-color: $color-blue;
             }
         }
     }
 
     @include breakpoint(tablet) {
+        
         .logo {
-            display: inline-block;
-
+            position: absolute;
+            top: 5px;
+            
             img {
                 height: 35px;
             }
-
+            
         }
 
         .main-nav {
@@ -71,15 +72,15 @@
 
                 a {
                     text-decoration: none;
-                    color: $black;
+                    color: $color-black;
                     transition-duration: 0.2s;
 
                     &:hover {
-                        color: $pink;
+                        color: $color-pink;
                     }
 
                     &:active {
-                        color: $blue;
+                        color: $color-blue;
                     }
                 }
             }
@@ -91,7 +92,7 @@
             top: 5px;
             right: 10%;
             cursor: pointer;
-            color: $pink;
+            color: $color-pink;
             font-size: 3vh;
         }
 
@@ -121,15 +122,15 @@
 
                 a {
                     text-decoration: none;
-                    color: $black;
+                    color: $color-black;
                     transition-duration: 0.2s;
 
                     &:hover {
-                        color: $pink;
+                        color: $color-pink;
                     }
 
                     &:active {
-                        color: $blue;
+                        color: $color-blue;
                     }
                 }
             }
@@ -141,7 +142,7 @@
             top: 5px;
             right: 10%;
             cursor: pointer;
-            color: $pink;
+            color: $color-pink;
             font-size: 3vh;
         }
 

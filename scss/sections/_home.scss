@@ -1,5 +1,5 @@
 .home {
-    background-color: $blue;
+    background-color: $color-blue;
 
     .container {
         display: grid;
@@ -28,7 +28,7 @@
                 font-size: 5vh;
                 font-family: 'Parisienne', cursive;
                 font-weight: lighter;
-                color: $white;
+                color: $color-white;
                 padding-left: 30px;
 
                 @include breakpoint(tablet) {
@@ -73,15 +73,15 @@
 
                     i {
                         font-size: 3vh;
-                        color: $white;
+                        color: $color-white;
                         transition-duration: 0.2s;
 
                         &:hover {
-                            color: $grey;
+                            color: $color-grey;
                         }
 
                         &:active {
-                            color: $pink;
+                            color: $color-pink;
                         }
 
                         @include breakpoint(tablet) {

@@ -1,12 +1,12 @@
 .contact {
-    background-color: $grey;
+    background-color: $color-grey;
 
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(100px, auto);
         grid-template-areas: "i1 sm""i2 sm""i3 sm";
-        color: $pink;
+        color: $color-pink;
 
         .item-1 {
             grid-area: i1;
@@ -46,14 +46,14 @@
                 align-self: center;
 
                 a {
-                    color: $pink;
+                    color: $color-pink;
 
                     &:hover {
-                        color: $white;
+                        color: $color-white;
                     }
 
                     &:active {
-                        color: $blue;
+                        color: $color-blue;
                     }
 
                 }
@@ -81,15 +81,15 @@
                 li {
 
                     a {
-                        color: $pink;
+                        color: $color-pink;
                         font-size: 3vh;
 
                         &:hover {
-                            color: $white;
+                            color: $color-white;
                         }
 
                         &:active {
-                            color: $blue;
+                            color: $color-blue;
                         }
 
                         @include breakpoint(tablet) {

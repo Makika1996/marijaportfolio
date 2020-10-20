@@ -1,11 +1,11 @@
 .service {
-    background-color: $blue;
+    background-color: $color-blue;
 
     .container {
         h1 {
 
             span {
-                color: $white;
+                color: $color-white;
             }
         }
 
@@ -17,7 +17,7 @@
                 text-align: center;
 
                 i {
-                    color: $white;
+                    color: $color-white;
                     font-size: 5vh;
                     
                     @include breakpoint(tablet) {

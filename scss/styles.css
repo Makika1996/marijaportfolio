@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   color: #5f6366;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -64,24 +65,21 @@ body {
 }
 
 .navbar .logo {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (2fr)[4];
-      grid-template-columns: repeat(4, 2fr);
+  display: block;
   justify-items: start;
 }
 
 .navbar .logo img {
   padding: 5px 0;
-  height: 55px;
+  height: 50px;
 }
 
 .navbar .main-nav {
   padding-right: 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   justify-items: end;
   -ms-grid-row-align: center;
       align-self: center;
@@ -106,7 +104,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .navbar .logo {
-    display: inline-block;
+    position: absolute;
+    top: 5px;
   }
   .navbar .logo img {
     height: 35px;
