@@ -44,6 +44,7 @@
             p {
                 font-size: 1.8vh;
                 text-align: justify;
+                padding-bottom: 10px;
 
                 @include breakpoint(tablet) {
                     font-size: 1.5vh;

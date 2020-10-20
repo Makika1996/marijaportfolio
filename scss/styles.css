@@ -66,7 +66,6 @@ body {
 
 .navbar .logo {
   display: block;
-  justify-items: start;
 }
 
 .navbar .logo img {
@@ -104,8 +103,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .navbar .logo {
-    position: absolute;
-    top: 5px;
+    display: inline-block;
   }
   .navbar .logo img {
     height: 35px;
@@ -113,10 +111,12 @@ body {
   .navbar .main-nav {
     list-style-type: none;
     display: none;
+    width: 100%;
   }
   .navbar .main-nav li {
     text-align: center;
     margin: 15px auto;
+    padding: 5px;
   }
   .navbar .main-nav li a {
     text-decoration: none;
@@ -126,6 +126,7 @@ body {
   }
   .navbar .main-nav li a:hover {
     color: #edb5bf;
+    border-bottom: none;
   }
   .navbar .main-nav li a:active {
     color: #99ced3;
@@ -159,6 +160,7 @@ body {
   .navbar .main-nav li {
     text-align: center;
     margin: 15px auto;
+    padding: 5px;
   }
   .navbar .main-nav li a {
     text-decoration: none;
@@ -168,6 +170,7 @@ body {
   }
   .navbar .main-nav li a:hover {
     color: #edb5bf;
+    border-bottom: none;
   }
   .navbar .main-nav li a:active {
     color: #99ced3;
@@ -425,6 +428,7 @@ body {
 .about .container .left p {
   font-size: 1.8vh;
   text-align: justify;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
