@@ -1,10 +1,10 @@
 $(document).ready(function () {
   console.log('circle');
 
-  circle($("#test-circle"), 95);
-  circle($("#test-circle2"), 55);
-  circle($("#test-circle3"), 70);
-  circle($("#test-circle4"), 40);
+  circle($("#test-circle"), 83);
+  circle($("#test-circle2"), 46);
+  circle($("#test-circle3"), 67);
+  circle($("#test-circle4"), 38);
 })
 
 function circle(el, percent) {
