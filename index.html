@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marija Portfolio</title>
     <link rel="icon" href="./images/logo.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./scss/styles.css">
 </head>
 
@@ -21,136 +19,154 @@
     <nav class="navbar">
 
         <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
         </span>
 
-        <a href="#home" class="logo"><img src="./images/logo.png" alt=""></a>
+        <a href="#home" class="logo"><img src="./images/logo.png" alt="Marija Marinkov logo"></a>
 
         <ul class="main-nav" id="js-menu">
-            <li><a href="#home" class="nav-links">Home</a></li>
-            <li><a href="#about" class="nav-links">About</a></li>
-            <li><a href="#service" class="nav-links">Service</a></li>
-            <li><a href="#skills" class="nav-links">Skills</a></li>
-            <!-- <li><a href="">Blog</a></li> -->
-            <li><a href="#contact" class="nav-links">Contact</a></li>
+            <li><a href="#home" class="nav-links">Start</a></li>
+            <li><a href="#about" class="nav-links">Über mich</a></li>
+            <li><a href="#service" class="nav-links">Leistungen</a></li>
+            <li><a href="#projects" class="nav-links">Projekte</a></li>
+            <li><a href="#contact" class="nav-links">Kontakt</a></li>
         </ul>
     </nav>
     <main>
         <section id="home" class="home">
             <div class="container">
                 <div class="left">
-                    <h2>Hey there! I'm</h2>
-                    <h1>Marija Marinkov</h1>
-                    <p>FrontEnd Developer</p>
+                    <p class="hero-kicker">Hallo, willkommen!</p>
+                    <h1>Ich bin <span>Marija Marinkov</span></h1>
+                    <div class="hero-line"></div>
+                    <h2>Fachinformatikerin für Anwendungsentwicklung</h2>
+                    <p>Ich verbinde Entwicklung, Problemlösung und nutzerorientiertes Denken, 
+                        um digitale Lösungen zu schaffen, die Arbeitsprozesse vereinfachen und 
+                        die Nutzung angenehmer machen.</p>
                     <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/marijamarinkov96"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/marijamarinkov/"><i
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a target="_blank" href="https://www.pinterest.com/marijamarinkov/"><i
-                                    class="fab fa-pinterest-p"></i></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/marija-marinkov-a37a33125/"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                        <li><a target="_blank" href="https://github.com/Makika1996"><i class="fab fa-github"></i></a>
-                        </li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marija-marinkov-a37a33125/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Makika1996" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/@marijamarinkov" aria-label="Figma"><i class="fa-brands fa-figma"></i></a></li>
                     </ul>
                 </div>
                 <div class="right">
-                    <img src="./images/profile.png" alt="">
+                    <img src="./images/profileBig.png" alt="Portrait of Marija Marinkov">
                 </div>
             </div>
         </section>
         <section id="about" class="about">
             <div class="container">
                 <div class="left">
-                    <h1 class="header">Who<span> i am</span></h1>
-                    <p class="blue">Hello everyone,<span> My name is Marija Marinkov</span></p>
+                    <h2 class="header">Wer ich bin</h2>
+                    <h3>Mein Weg in die Softwareentwicklung</h3>
                     <p>
-                        I'm 26 years old FrontEnd Developer based in Groß-Umstadt, Germany. I like building things with code,
-                        I like design and technology. I am able to handle multiple tasks on a daily basis, hardworking
-                        and always ready to learn new things, accurate person and paying attention to the little things.
+                        Mein Weg in die IT begann in Novi Sad, wo ich erste Erfahrungen in der Webentwicklung,
+                        Qualitätssicherung und Arbeit mit WordPress gesammelt habe. Dort arbeitete ich mit
+                        HTML, CSS, JavaScript, Vue.js und Git und entwickelte ein gutes Verständnis für
+                        strukturierte, benutzerfreundliche und qualitativ saubere digitale Lösungen.
                     </p>
                     <p>
-                        I started my coding experience with HTML the basic building block
-                        for developing websites and CSS the language used to style the document that I create with HTML,
-                        soon after that I learnt SASS so that my code have clear look. Then I expended my knowledge with
-                        JavaScript(JQuery) so that my sites have some functions. Learning Git help me to go back to a
-                        previous version of my work and find out what went wrong without tearing the whole thing down.
-                        Now I make websites with responsive design that allows you to open webpage on any device.
+                        Später bin ich nach Deutschland gekommen, um mich fachlich weiterzuentwickeln.
+                        Hier habe ich meine Ausbildung zur Fachinformatikerin für Anwendungsentwicklung
+                        erfolgreich abgeschlossen und meine Kenntnisse in der Softwareentwicklung deutlich
+                        erweitert.
                     </p>
                     <p>
-                        My first contact with programming was at my summer break before starting my studies at University
-                        in students friendly space of IT science. And this opened my eyes to the word of Web development.
-                        I learned the basic functions of Front End development, how to use tools (HTML, CSS) and how to make
-                        a perfect combination with math and logics.<br>
-                        Then I started working on the website for "Zavod za zdravstvenu  zaštitu studenata", Novi Sad, that
-                        was based on WordPress for 2 years.<br>
-                        In Eton Digital Ltd. I started as a QA Engineer Intern, reviewing quality specifications and technical
-                        design documents to provide timely and meaningful feedback. After a few months working there I started
-                        with my colleague Senior Front End developer working on his projects while improving my knowledge and
-                        getting new skills in JS.<br>
-                        After that I started in MP Solution my internship to learn new languages like Vue.js.<br>
-                        The last 10 months I spent in Germany as an Au Pair, working for a wonderful Family with three kids.
-                        This experience brings me better knowledge in German language and culture.
+                        Während meiner Ausbildung sammelte ich praktische Erfahrungen mit Java, Python,
+                        SQL, Git, Docker, Jira, Cypress und ersten Angular-Themen. Dabei habe ich gelernt,
+                        Softwarelösungen zu entwickeln, Fehler zu analysieren, Tests zu unterstützen und
+                        technische Anforderungen strukturiert umzusetzen.
+                    </p>
+                    <p>
+                        Heute interessiere ich mich besonders für Softwareentwicklung, Datenbanken,
+                        Qualitätssicherung und digitale Lösungen, die Prozesse einfacher, effizienter und
+                        verständlicher machen.
                     </p>
                 </div>
                 <div class="right">
-                    <img src="images/about.png" alt="">
+                    <img src="images/about.png" alt="About Marija Marinkov">
                 </div>
             </div>
         </section>
         <section id="service" class="service">
+            <span id="skills" class="section-anchor"></span>
             <div class="container">
-                <h1 class="header">What <span>Service</span> i offer</h1>
+                <p class="section-kicker">Meine Schwerpunkte</p>
+                <h2 class="header">Was ich <span>mache</span></h2>
                 <div class="bottom">
                     <div class="item-service">
-                        <i class="fas fa-code"></i>
-                        <h3>Web Development</h3>
-                        <p>HTML and CSS are the most basic
-                            building blocks of web coding. JavaScript lets you add a ton more functionality to your
-                            websites, and you can create a lot of basic web applications using nothing more than HTML,
-                            CSS, and JavaScript.</p>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Softwareentwicklung</h3>
+                        <p>Ich entwickle strukturierte und praxisnahe Softwarelösungen, die technische Anforderungen zuverlässig umsetzen und Arbeitsprozesse vereinfachen.</p>
+                        <p class="service-more">Dabei achte ich auf verständliche Struktur, saubere Funktionen, nachvollziehbaren Code und Lösungen, die später gut erweitert werden können.</p>
                     </div>
                     <div class="item-service">
-                        <i class="fas fa-bug"></i>
-                        <h3>Testing/Debugging</h3>
-                        <p>If there’s one thing that all front end developers have to have, regardless of the job
-                            description or official title, it’s excellent problem solving skills.</p>
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Webentwicklung</h3>
+                        <p>Ich erstelle moderne und benutzerfreundliche Webanwendungen mit Fokus auf klare Strukturen, Responsivität und sauberen Code.</p>
+                        <p class="service-more">Meine Schwerpunkte liegen bei HTML, CSS/SCSS, JavaScript und responsiven Oberflächen, die auf Desktop und Mobilgeräten zuverlässig funktionieren.</p>
                     </div>
                     <div class="item-service">
-                        <i class="fab fa-wordpress"></i>
-                        <h3>WordPress</h3>
-                        <p>WordPress developers are a type of web developer who work with WordPress (WP), an online
-                            content management system, to design and create web applications.</p>
+                        <i class="fa-solid fa-bug"></i>
+                        <h3>Testing & Debugging</h3>
+                        <p>Ich analysiere Fehler, unterstütze Testprozesse und verbessere die Qualität von Anwendungen durch strukturiertes Vorgehen.</p>
+                        <p class="service-more">Ich arbeite systematisch: Fehler reproduzieren, Ursache finden, Lösung testen und Änderungen nachvollziehbar dokumentieren.</p>
                     </div>
                     <div class="item-service">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Financial Analyst</h3>
-                        <p>Economics majors learn to gather, organize, and interpret data, using mathematical formulas
-                            and statistics to make calculations.</p>
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Datenbanken & Tools</h3>
+                        <p>Ich arbeite mit SQL, Git, Docker, Jira und weiteren Tools, um Entwicklungsprozesse effizient und nachvollziehbar zu gestalten.</p>
+                        <p class="service-more">Besonders wichtig sind mir saubere Datenabfragen, Versionskontrolle, strukturierte Tickets und eine Arbeitsweise, die im Team verständlich bleibt.</p>
+                    </div>
+                    <div class="item-service">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Qualitätssicherung</h3>
+                        <p>Durch meine QA-Erfahrung bringe ich einen genauen Blick für Details, Testfälle und stabile Software mit.</p>
+                        <p class="service-more">Ich denke aus Nutzerperspektive, prüfe Randfälle und unterstütze dabei, Anwendungen robuster und verlässlicher zu machen.</p>
+                    </div>
+                    <div class="item-service">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <h3>Technische Dokumentation</h3>
+                        <p>Ich dokumentiere Arbeitsschritte und technische Lösungen klar und strukturiert, damit Projekte nachhaltig nachvollziehbar bleiben.</p>
+                        <p class="service-more">Gute Dokumentation hilft beim Verständnis, bei Übergaben und bei späteren Erweiterungen. Deshalb formuliere ich technisch klar und praxisnah.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="skills" class="skills">
+        <section id="projects" class="projects">
             <div class="container">
-                <h1 class="header">Skills</h1>
-                <div class="row">
-                    <div class="column">
-                        <div id="test-circle"></div>
-                        <h2 class="circle-name">HTML / CSS</h2>
+                <p class="section-kicker">Meine Arbeiten</p>
+                <h2 class="header">Meine <span>Projekte</span></h2>
+                <div class="projects-content">
+                    <div class="projects-text">
+                        <p>
+                            Auf meinem GitHub-Profil findest du eine Übersicht meiner bisherigen Projekte,
+                            Übungen und Code-Beispiele. Hier zeige ich zusätzlich Screenshots, damit man
+                            direkt sehen kann, wie die Projekte visuell aussehen.
+                        </p>
+                        <a class="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Makika1996">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub-Profil ansehen
+                        </a>
                     </div>
-                    <div class="column">
-                        <div id="test-circle2"></div>
-                        <h2 class="circle-name">JAVASCRIPT / JQUERY</h2>
-                    </div>
-                    <div class="column">
-                        <div id="test-circle3"></div>
-                        <h2 class="circle-name">VERSION CONTROL / GIT</h2>
-                    </div>
-                    <div class="column">
-                        <div id="test-circle4"></div>
-                        <h2 class="circle-name">REACT</h2>
+
+                    <div class="projects-gallery" aria-label="Projekt Screenshots">
+                        <figure class="project-preview">
+                            <div class="screenshot-placeholder">Screenshot 1</div>
+                            <figcaption>Portfolio / Webprojekt</figcaption>
+                        </figure>
+                        <figure class="project-preview">
+                            <div class="screenshot-placeholder">Screenshot 2</div>
+                            <figcaption>Abschlussprojekt</figcaption>
+                        </figure>
+                        <figure class="project-preview">
+                            <div class="screenshot-placeholder">Screenshot 3</div>
+                            <figcaption>Frontend Projekt</figcaption>
+                        </figure>
+                        <figure class="project-preview">
+                            <div class="screenshot-placeholder">Screenshot 4</div>
+                            <figcaption>Weitere Arbeit</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -159,39 +175,31 @@
             <div class="container">
 
                 <div class="item-1">
-                    <i class="fas fa-home"></i>
-                    <p>Groß-Umstadt, Germany</p>
+                    <i class="fa-solid fa-home"></i>
+                    <p>Mainz, Germany</p>
                 </div>
                 <div class="item-2">
-                    <i class="fas fa-mobile"></i>
-                    <p>+49 176 8841 5928</p>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>+49 176 6490 9599</p>
                 </div>
                 <div class="item-3">
-                    <i class="far fa-envelope"></i>
+                    <i class="fa-regular fa-envelope"></i>
                     <p>
-                        <a target="_blank" href="mailto:marijamarinkov96@gmail.com">marijamarinkov96@gmail.com</a><br>
-                        <a target="_blank" href="mailto:marijamarinkov@icloud.com">marijamarinkov@icloud.com</a>
+                        <a href="mailto:marijamarinkov96@gmail.com">marijamarinkov96@gmail.com</a>
                     </p>
                 </div>
 
                 <div class="right">
                     <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/marijamarinkov96"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/marijamarinkov/"><i
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a target="_blank" href="https://www.pinterest.com/marijamarinkov/"><i
-                                    class="fab fa-pinterest-p"></i></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/marija-marinkov-a37a33125/"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                        <li><a target="_blank" href="https://github.com/Makika1996"><i class="fab fa-github"></i></a>
-                        </li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/marija-marinkov-a37a33125/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Makika1996" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/@marijamarinkov" aria-label="Figma"><i class="fa-brands fa-figma"></i></a></li>
                     </ul>
                 </div>
             </div>
         </section>
         <footer>
-            <div class="copyright"><span>Marija Marinkov</span> © 2022</div>
+            <div class="copyright"><span>Marija Marinkov</span> © 2026</div>
         </footer>
     </main>
     <script src="js/jquery-3.3.1.js"></script>

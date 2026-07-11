@@ -1,5 +1,8 @@
 .contact {
-    background-color: $color-grey;
+    background-color: $color-white;
+    min-height: 0;
+    display: block;
+    align-items: initial;
 
     .container {
         display: grid;
@@ -7,6 +10,8 @@
         grid-auto-rows: minmax(100px, auto);
         grid-template-areas: "i1 sm""i2 sm""i3 sm";
         color: $color-pink;
+        padding-top: 35px;
+        padding-bottom: 30px;
 
         .item-1 {
             grid-area: i1;
@@ -24,13 +29,15 @@
         .item-2,
         .item-3 {
             display: grid;
-            grid-template-columns: 1fr 5fr;
-            padding: 20px 0;
+            grid-template-columns: 54px 1fr;
+            padding: 10px 0;
+            min-width: 0;
 
             i {
                 justify-self: center;
                 align-self: center;
                 font-size: 3vh;
+                color: #8B0000;
 
                 @include breakpoint(tablet) {
                     font-size: 2vh;
@@ -44,12 +51,14 @@
             p {
                 justify-self: start;
                 align-self: center;
+                line-height: 1.5;
+                overflow-wrap: anywhere;
 
                 a {
-                    color: $color-pink;
+                    color: #8B0000;
 
                     &:hover {
-                        color: $color-white;
+                        color: $color-grey;
                     }
 
                     &:active {
@@ -69,23 +78,26 @@
         }
 
         .right {
-            margin: auto 0;
+            margin: auto 0 auto auto;
             grid-area: sm;
+            justify-self: end;
+            width: min(100%, 360px);
 
             ul {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
                 justify-items: center;
                 list-style-type: none;
+                gap: 18px;
 
                 li {
 
                     a {
-                        color: $color-pink;
+                        color: #8B0000;
                         font-size: 3vh;
 
                         &:hover {
-                            color: $color-white;
+                            color: $color-grey;
                         }
 
                         &:active {
@@ -110,12 +122,16 @@
         }
 
         @include breakpoint(tablet) {
-            display: inline-block;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "i1""i2""i3""sm";
             width: 100%;
         }
 
         @include breakpoint(mobileonly) {
-            display: inline-block;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "i1""i2""i3""sm";
             width: 100%;
         }
     }

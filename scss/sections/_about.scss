@@ -2,10 +2,12 @@
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 48px;
         justify-items: center;
         align-items: center;
 
-        h1 {
+        h1,
+        h2 {
             justify-self: start;
 
             span {
@@ -22,6 +24,13 @@
         }
 
         .left {
+
+            h3 {
+                color: $color-pink;
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding-bottom: 18px;
+            }
 
             .blue {
                 color: $color-pink;
@@ -41,17 +50,19 @@
                 }
             }
 
-            p {
-                font-size: 1.8vh;
+                p {
+                font-size: 1rem;
+                line-height: 1.7;
                 text-align: justify;
                 padding-bottom: 10px;
 
                 @include breakpoint(tablet) {
-                    font-size: 1.5vh;
+                    font-size: 1rem;
                 }
 
                 @include breakpoint(mobileonly) {
-                    font-size: 1.5vh;
+                    font-size: 0.95rem;
+                    text-align: left;
                 }
             }
 
@@ -59,9 +70,29 @@
 
         .right {
             justify-self: center;
+            align-self: center;
+            position: relative;
+            display: grid;
+            place-items: center;
+            width: min(100%, 420px);
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 28px -18px -18px 28px;
+                border: 2px solid rgba(139, 0, 0, 0.35);
+                border-radius: 28px;
+                transform: rotate(-5deg);
+                z-index: 0;
+            }
 
             img {
-                height: 300px;
+                width: min(100%, 360px);
+                height: auto;
+                position: relative;
+                z-index: 1;
+                border-radius: 28px;
+                box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
 
                 @include breakpoint(tablet) {
                     display: none;
@@ -75,11 +106,13 @@
         }
 
         @include breakpoint(tablet) {
-            display: inline-block;
+            display: grid;
+            grid-template-columns: 1fr;
         }
 
         @include breakpoint(mobileonly) {
-            display: inline-block;
+            display: grid;
+            grid-template-columns: 1fr;
         }
     }
 

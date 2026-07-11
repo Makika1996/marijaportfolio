@@ -1,0 +1,119 @@
+.projects {
+    background-color: $color-white;
+
+    .container {
+        .section-kicker {
+            color: $color-pink;
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            padding-bottom: 18px;
+            text-transform: uppercase;
+        }
+
+        .header {
+            padding-bottom: 28px;
+
+            span {
+                color: $color-pink;
+            }
+        }
+
+        .projects-content {
+            display: grid;
+            grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+            gap: 42px;
+            align-items: start;
+        }
+
+        .projects-text {
+            p {
+                max-width: 560px;
+                color: $color-grey;
+                font-size: 1.05rem;
+                line-height: 1.7;
+                padding-bottom: 28px;
+            }
+
+            .github-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                padding: 14px 18px;
+                color: $color-white;
+                background-color: $color-pink;
+                border-radius: 8px;
+                font-weight: 700;
+                text-decoration: none;
+                transition: background-color 0.2s ease, transform 0.2s ease;
+
+                i {
+                    color: $color-white;
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    background-color: $color-black;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+
+        .projects-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .project-preview {
+            overflow: hidden;
+            background-color: $color-white;
+            border: 1px solid rgba(95, 99, 102, 0.14);
+            border-radius: 8px;
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
+
+            img,
+            .screenshot-placeholder {
+                display: block;
+                width: 100%;
+                aspect-ratio: 16 / 10;
+                object-fit: cover;
+            }
+
+            .screenshot-placeholder {
+                display: grid;
+                place-items: center;
+                color: $color-pink;
+                background: linear-gradient(135deg, rgba(139, 0, 0, 0.08), rgba(95, 99, 102, 0.08));
+                font-weight: 800;
+            }
+
+            figcaption {
+                padding: 14px 16px;
+                color: $color-black;
+                font-weight: 700;
+            }
+        }
+    }
+
+    @include breakpoint(tablet) {
+        .container {
+            .projects-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        .container {
+            .projects-text p {
+                font-size: 0.95rem;
+                text-align: left;
+            }
+
+            .projects-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
